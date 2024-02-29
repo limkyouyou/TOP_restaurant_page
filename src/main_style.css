@@ -1,10 +1,114 @@
 
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('./img/fonts/Roboto-Regular.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('./img/fonts/Roboto-Bold.ttf');
+  font-style: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'roboto-regular';
+}
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  #main_container {
+    width: 1100px;
+  }
+
+  #content {
+    margin: 0 20px 0 20px;
+  }
+
+}
+
+#main_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF8F0;
+}
+
+header {
+  padding-top: 0;
+}
+
+#logo_container {
+  padding: 30px 0 30px 0;
+
 }
 
 #logo_img {
   width: 150px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+nav {
+  margin-top: 5px;
+  padding: 0px 13px 0 13px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav button {
+  width: 100px;
+  height: 30px;
+  padding-top: 5px;
+  border-style: hidden;
+  background-color: #FFF8F0;
+  color: #4A4A48;
+  font-family: 'roboto-bold';
+  font-size: 18px;
+}
+
+#active,
+nav button:hover {
+  border-style: solid solid none solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #FFF8F0;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  background-color: #FF908B;
+  color: #FFF8F0;
+  cursor: pointer;
+}
+
+#content {
+  flex: auto;
+  padding: 30px;
+  border-radius: 13px;
+  background-color: #FF908B;
+}
+
+footer {
+  text-align: center;
+  vertical-align: middle;
+  padding: 25px 0 35px 0;
+}
+
+footer a {
+  color: #4A4A48;
+}
+
+footer a:hover {
+  color: #80806b;
 }
