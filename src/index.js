@@ -3,6 +3,7 @@ import './main_style.css';
 import add_home_content from "./home_content";
 import add_menu_content from "./menu_content";
 import add_book_content from "./book_content";
+import add_contact_content from "./contact_content";
 //import main_logo from "./img/logo/svg/no_background_logo.svg"
 import main_logo from "./img/logo/png/no_background_logo.png"
 //import main_logo from "./test.jpg"
@@ -20,6 +21,7 @@ const dom_interface = (function () {
   //add_book_content(main_div);
   add_home_content(main_div);
   //add_menu_content(main_div);
+  //add_contact_content(main_div);
 
   const footer_container = document.getElementById('footer_container');
   const privacy_link = document.createElement('a');
@@ -80,5 +82,7 @@ const dom_interface = (function () {
     contact_btn.classList.add('active');
 
     remove_all_child();
+
+    add_contact_content(main_div);
   });
 })();
