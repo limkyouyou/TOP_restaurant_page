@@ -80,7 +80,7 @@ nav button {
   font-size: 18px;
 }
 
-#active,
+.active,
 nav button:hover {
   border-style: solid solid none solid;
   border-width: 1px 1px 1px 1px;
@@ -94,9 +94,10 @@ nav button:hover {
 
 #content {
   flex: auto;
-  padding: 30px;
+  padding: 60px 30px 40px 30px;
   border-radius: 13px;
   background-color: #FF908B;
+  text-align: center;
 }
 
 footer {

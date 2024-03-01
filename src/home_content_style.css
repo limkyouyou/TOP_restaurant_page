@@ -1,0 +1,19 @@
+
+
+
+#welcome_msg {
+  font-size: 30px;
+  color: #2c2c2b;
+}
+
+#img_container {
+  margin: 40px 0 40px 0;
+}
+
+#front_img {
+  width: 400px;
+}
+
+#front_description {
+  color: #2c2c2b;
+}
