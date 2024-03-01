@@ -12,6 +12,8 @@
 
 #front_img {
   width: 400px;
+  box-shadow: 3px 3px 5px rgb(131, 78, 78);
+  margin-bottom: 10px;
 }
 
 #front_description {

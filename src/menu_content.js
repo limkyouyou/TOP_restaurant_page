@@ -41,7 +41,7 @@ function add_menu(img, ref, price, description) {
 const add_content = (main_element) => {
 
   const content_div = document.createElement('div');
-  content_div.classList.add('content_container');
+  content_div.id = 'menu_content_container';
 
   let meal_1_ref = 'Photo by <a href="https://unsplash.com/@victoriakosmo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Victoria Shes</a> on <a href="https://unsplash.com/photos/grilled-meat-and-vegetable-on-the-table-UC0HZdUitWY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>';
   let price_1 = '$40';

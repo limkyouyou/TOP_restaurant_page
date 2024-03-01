@@ -6,7 +6,7 @@ import './home_content_style.css';
 const add_content = (main_element) => {
 
   const content_div = document.createElement('div');
-  content_div.classList.add('content_container');
+  content_div.id = 'home_content_container';
 
   const welcome_div = document.createElement('div');
   welcome_div.id = 'welcome_content'

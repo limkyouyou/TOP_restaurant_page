@@ -1,0 +1,55 @@
+
+#content_container {
+  display: flex;
+  justify-content: center;
+}
+
+#book_form {
+  width: 450px;
+}
+
+.input_container {
+  text-align: left;
+  margin-bottom: 38px;
+}
+
+.input_container label{
+  display: block;
+  font-family: 'roboto-bold';
+  color: #2c2c2b;
+  margin-bottom: 8px;
+}
+
+.input_container input,
+.input_container textarea {
+  width: 400px;
+  margin-left: 35px;
+}
+
+.input_container input {
+  height: 25px;
+}
+
+.submit_container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.submit_container input{
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #566246;
+  font-family: 'roboto-bold';
+  color: #FFF8F0;  
+}
+
+.submit_container input:hover {
+  background-color: #6b775a;
+}
+
+.submit_container input:active {
+  box-shadow: 1px 1px 3px #303b22 inset;
+}

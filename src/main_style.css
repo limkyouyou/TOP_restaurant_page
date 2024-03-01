@@ -84,12 +84,13 @@ nav button {
 nav button:hover {
   border-style: solid solid none solid;
   border-width: 1px 1px 1px 1px;
-  border-color: #FFF8F0;
+  border-color: #FF908B;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
   background-color: #FF908B;
   color: #FFF8F0;
   cursor: pointer;
+  box-shadow: 1px -1px 2px #c49d9a;
 }
 
 #content {
