@@ -1,7 +1,7 @@
 
 import front_description from './front_description';
 import dining_img from './img/jay-wennington-N_Y88TWmGwA-unsplash.jpg';
-import './home_content_style.css'
+import './home_content_style.css';
 
 const add_content = (main_element) => {
 
