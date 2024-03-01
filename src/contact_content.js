@@ -41,8 +41,12 @@ const add_content = (main_element) => {
   const phone_number_element = document.createElement('p');
   const phone_number = '514-123-1234';
   phone_number_element.textContent = phone_number;
+  const email_element = document.createElement('p');
+  const email = 'loremipsum@gmail.com';
+  email_element.textContent = email;
   contact_info_container.appendChild(address_element);
   contact_info_container.appendChild(phone_number_element);
+  contact_info_container.appendChild(email_element);
   content_div.appendChild(contact_info_container);
 
   const hours_container = document.createElement('div')
@@ -59,13 +63,13 @@ const add_content = (main_element) => {
   const thurs_hour = '10:00 - 22:00'
   const thurs_container = add_hours('Thursday', thurs_hour)
   hours_container.appendChild(thurs_container);
-  const fri_hour = '10:00 - 22:00'
+  const fri_hour = '10:00 - 00:00'
   const fri_container = add_hours('Friday', fri_hour)
   hours_container.appendChild(fri_container);
   const sat_hour = '11:00 - 00:00'
   const sat_container = add_hours('Saturday', sat_hour)
   hours_container.appendChild(sat_container);
-  const sun_hour = '11:00 - 00:00'
+  const sun_hour = '11:00 - 22:00'
   const sun_container = add_hours('Sunday', sun_hour)
   hours_container.appendChild(sun_container);
   content_div.appendChild(hours_container);

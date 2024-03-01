@@ -1,8 +1,4 @@
 
-#home_content_container {
-  padding: 50px 0 50px 0;
-}
-
 .meal_container {
   margin: 150px 0 150px 0;
   display: flex;
@@ -25,7 +21,7 @@
 }
 
 .menu_description {
-  width: 700px;
+  max-width: 700px;
   color: #2c2c2b;
   font-family: 'roboto-bold';
   font-size: 16px;

@@ -1,6 +1,5 @@
 
 #content_container {
-  padding: 50px 0 50px 0;
   display: flex;
   justify-content: center;
 }
@@ -23,7 +22,7 @@
 
 .input_container input,
 .input_container textarea {
-  width: 400px;
+  width: 390px;
   margin-left: 35px;
 }
 

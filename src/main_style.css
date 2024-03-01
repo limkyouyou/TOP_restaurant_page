@@ -19,9 +19,8 @@
   color: #2c2c2b;
 }
 
-[class*="col-"] {
-  float: left;
-  width: 100%;
+body {
+  background-color: #FFF8F0;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -30,12 +29,18 @@
     justify-content: center;
   }
 
-  #main_container {
+  #content {
     width: 1100px;
+    margin: 0 20px 0 20px;
+    padding: 110px 50px 100px 50px;
   }
 
+}
+
+@media only screen and (max-width: 1099px) {
+
   #content {
-    margin: 0 20px 0 20px;
+    padding: 110px 10px 100px 10px;
   }
 
 }
@@ -44,7 +49,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #FFF8F0;
 }
 
 header {
@@ -60,6 +64,10 @@ header {
   width: 150px;
   display: block;
   margin: 0 auto 0 auto;
+}
+
+#logo_img:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -84,8 +92,7 @@ nav button {
 .active,
 nav button:hover {
   border-style: solid solid none solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #FF908B;
+  border-width: 0;
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
   background-color: #FF908B;
@@ -94,12 +101,32 @@ nav button:hover {
   box-shadow: 1px -1px 2px #c49d9a;
 }
 
+nav button:active {
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  background-color: #FF908B;
+  color: #FFF8F0;
+  cursor: pointer;
+  box-shadow: -1px 1px 2px #806f6f inset;
+}
+
 #content {
   flex: auto;
-  padding: 60px 30px 40px 30px;
   border-radius: 13px;
   background-color: #FF908B;
   text-align: center;
+}
+
+p a {
+  color: #ffffff;
+}
+
+p a:hover {
+  color: #e7e0d8;
+}
+
+img + p {
+  font-size: 14px;
 }
 
 footer {
@@ -110,8 +137,10 @@ footer {
 
 footer a {
   color: #4A4A48;
+  text-decoration: underline;
 }
 
 footer a:hover {
   color: #80806b;
+  cursor: pointer;
 }
